@@ -21,6 +21,8 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     padding: 30px 45px;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -31,7 +33,9 @@ nav {
     gap: 30px;
     margin-bottom: 40px;
     flex-wrap: wrap;
-    
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+
 }
 
 nav a {
@@ -39,12 +43,19 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-
+    transition: color 0.2s;
+    
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: #a05e35;
 
+}
+
+nav a.active {
+    color: #a05e35;
+    border-bottom: 2px solid #a05e35;
 }
 
 h1 {
@@ -52,9 +63,74 @@ h1 {
 
 }
 
+h2 {
+    margin-bottom: 10px;
+
+}
+
 p {
     font-size: 17px;
+    line-height: 1.8;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 25px auto;
+
+}
+
+footer {
     text-align: center;
+    font-size: 13px;
+    color: #777777;
+    border-top: 1px solid #cccccc;
+    padding-top: 20px;
+    margin-top: auto;
+
+}
+
+.vocabulary {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 30px;
+    font-size: 16px;
+}
+
+.vocabulary th,
+.vocabulary td {
+    border: 1px solid #dddddd;
+    padding: 14px;
+    text-align: left;
+
+}
+
+.vocabulary th {
+    background-color: #a05e35;
+    color: white;
+
+}
+
+.vocabulary td:first-child {
+    font-weight: bold;
+    width: 30%;
+
+}
+
+.vocabulary tr:nth-child(even) {
+    background-color: #f1f1f1;
+
+}
+
+.vocabulary tr:hover td {
+    background-color: #e8e8e8;
 
 }
 
