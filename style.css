@@ -134,6 +134,24 @@ footer {
 
 }
 
+.content p a {
+    color: #a05e35;
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+
+}
+
+.content p a:hover {
+    color: #704020;
+
+}
+
+.citation {
+    padding-left: 30px;
+    text-indent: -30px;
+    
+}
+
 @media (max-width: 700px) {
     .content {
         width: 92%;
